@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/rl_duyuru"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="#FCFFDC"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp">
+
+                                <ImageView
+                                    android:id="@+id/duyuru_item_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:contentDescription="@string/todo" />
+
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginBottom="12dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/baslik"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:lineSpacingExtra="6sp"
+                                    android:text="@string/todo"
+                                    android:textColor="#161616"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textduyuru"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/comfortaa"
+                                    android:lineSpacingExtra="7sp"
+                                    android:text="@string/home_ozlu_soz"
+                                    android:textColor="#4f4f4f"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

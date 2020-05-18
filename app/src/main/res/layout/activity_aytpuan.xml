@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="18"
+    android:orientation="vertical"
+    android:background="@drawable/bg_greedient"
+    tools:context=".Activitys.AytPuanActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msemi"
+                android:text="@string/ayt_hesaplama"
+                android:textColor="#FFF"
+                android:textSize="26sp" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/mreg"
+                android:text="@string/home_ozlu_soz"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:background="@drawable/bg_menu"
+        android:layout_marginTop="10dp"
+        android:paddingTop="16dp">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.diegodobelo.expandingview.ExpandingList
+                android:id="@+id/expanding_list_ayt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="96dp"/>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_green"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_green"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/tyt"
+                        android:textColor="#FFF"
+                        android:textSize="14sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_sonuctyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text=""
+                        android:ems="5"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingBottom="2dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/saylin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_green"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/say"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/say"
+                        android:textColor="#FFF"
+                        android:textSize="14sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_sonucsayisal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text=""
+                        android:ems="5"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingBottom="2dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/sonucesitlin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_green"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/soz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/ea"
+                        android:textColor="#FFF"
+                        android:textSize="14sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_sonucesit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:textColor="#FFF"
+                        android:ems="5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp"
+                        android:paddingBottom="2dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/sonucsozlin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_green"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sozely"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/soz"
+                        android:textColor="#FFF"
+                        android:textSize="14sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_sonucsozel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text=""
+                        android:ems="5"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingBottom="2dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/di"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_green"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dilt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/dil"
+
+                        android:textColor="#FFF"
+                        android:textSize="14sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_sonucdil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text=""
+                        android:ems="5"
+                        android:gravity="center_horizontal"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingBottom="2dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#fff">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner_aytpuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="ca-app-pub-5047443485754315/5531009883"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+</LinearLayout>

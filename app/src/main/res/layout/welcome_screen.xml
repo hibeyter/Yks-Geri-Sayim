@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/linear_welcome_screen">
+    <ImageView
+        android:id="@+id/slide_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/welcome_image"/>
+
+    <TextView
+        android:textColor="#222222"
+        android:id="@+id/txt_title"
+        android:fontFamily="@font/comfortaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:textColor="#222222"
+        android:textAlignment="center"
+        android:fontFamily="@font/comfortaa"
+        android:id="@+id/txt_bilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btn_welcome"
+        android:layout_width="wrap_content"
+        android:text="@string/hosgeldin"
+        android:background="@drawable/bg_tour2"
+        android:layout_height="wrap_content"
+        android:textColor="@color/beyaz"
+        android:onClick="welcomeBtn"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="50dp" />
+    <ImageView
+        android:id="@+id/img_diger"
+        android:layout_marginTop="16dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="nextSlide"
+        android:src="@drawable/ic_sag"
+        android:contentDescription="@string/welcome_image" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="18"
+    android:orientation="vertical"
+    android:background="@drawable/bg_greedient"
+    tools:context=".Activitys.DuyurularActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/msemi"
+                    android:text="@string/guncel_duyurular"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/mreg"
+                    android:text="@string/home_ozlu_soz"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/desk"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="16">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/duyuru_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner_calisma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="ca-app-pub-5047443485754315/1504613897" />
+
+
+
+
+
+</LinearLayout>
